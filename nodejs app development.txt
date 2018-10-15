@@ -1,0 +1,190 @@
+C:\>npm install -g express-generator
+C:\Users\rmathew\AppData\Roaming\npm\express -> C:\Users\rmathew\AppData\Roaming\npm\node_modules\express-generator\bin\express-cli.js
+C:\Users\rmathew\AppData\Roaming\npm
+`-- express-generator@4.15.0
+  +-- commander@2.9.0
+  | `-- graceful-readlink@1.0.1
+  +-- ejs@2.5.6
+  +-- mkdirp@0.5.1
+  | `-- minimist@0.0.8
+  `-- sorted-object@2.0.1
+
+
+
+   ?-------------------------------------?
+   ¦                                     ¦
+   ¦   Update available 4.4.4 ? 4.5.0    ¦
+   ¦     Run npm i -g npm to update      ¦
+   ¦                                     ¦
+   ?-------------------------------------?
+
+
+C:\>cd development
+
+C:\development>express myExpressApp
+
+
+  warning: the default view engine will not be jade in future releases
+  warning: use `--view=jade' or `--help' for additional options
+
+
+   create : myExpressApp
+   create : myExpressApp/package.json
+   create : myExpressApp/app.js
+   create : myExpressApp/routes
+   create : myExpressApp/routes/index.js
+   create : myExpressApp/routes/users.js
+   create : myExpressApp/views
+   create : myExpressApp/views/index.jade
+   create : myExpressApp/views/layout.jade
+   create : myExpressApp/views/error.jade
+   create : myExpressApp/public
+   create : myExpressApp/bin
+   create : myExpressApp/bin/www
+   create : myExpressApp/public/javascripts
+   create : myExpressApp/public/images
+   create : myExpressApp/public/stylesheets
+   create : myExpressApp/public/stylesheets/style.css
+
+   install dependencies:
+     > cd myExpressApp && npm install
+
+   run the app:
+     > SET DEBUG=myexpressapp:* & npm start
+
+
+C:\development\myExpressApp>npm install
+
+
+installed ejs and fs
+
+npm install ejs
+npm install fs
+
+
+http://www.bubblecode.net/en/2016/01/22/understanding-oauth2/
+
+
+Creating MEAN apps (MongoDB, Express, Angular and Node)
+==================
+CD to a base folder like a workspace...
+ng new FeeSummaryNodeApp --skip-npm
+npm install --save express body-parser
+create a folder named server under project 
+create a file named server.js under project
+********************************************
+
+// Get dependencies
+const express = require('express');
+const path = require('path');
+const http = require('http');
+const bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser');
+var cors = require('cors');
+var mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost:27017/test');
+
+// Get our API routes
+const api = require('./server/routes/api');
+
+const app = express();
+
+// Parsers for POST data
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(cors());
+
+// Point static path to dist
+app.use(express.static(path.join(__dirname, 'dist')));
+
+// Set our api routes
+app.use('/api', api);
+
+// Catch all other routes and return the index file
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist/index.html'));
+});
+
+/**
+ * Get port from environment and store in Express.
+ */
+const port = process.env.PORT || '3000';
+app.set('port', port);
+
+/**
+ * Create HTTP server.
+ */
+const server = http.createServer(app);
+
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+server.listen(port, () => console.log(`API running on localhost:${port}`));
+********************************************
+do an angular build using webpack ( this would put angular app under dist folder)
+ng build
+node server.js -- brings up the app at localhost:port# ( whatever port# was set in server.js) 
+
+npm install moment --save
+npm install jwt-simple
+npm install base-64
+npm install utf8
+npm install store
+
+npm install ng2-datepicker --save
+
+
+
+====================================================================
+
+POC secrurity flow
+
+feesummarynodeapp
+myexpressapp
+gatwayapp
+oAuthServerapp
+
+
+
+git
+---------------------------------------------------------------------
+
+how to remove a git remote repos
+git remote remove origin
+
+Creating a local git repos
+--------------------------
+echo "# oAuthServerApp" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/rmathewfsb/oAuthServerApp.git
+git push -u origin master
+======================================================================
+git remote add origin https://github.com/rmathewfsb/oAuthServerApp.git
+git push -u origin master
+======================================================================
+
+git remote add origin https://github.com/rmathewfsb/pictures.git
+git push -u origin master
+=========================================================
+
+Mule
+====
+
+bring up node api-designer for raml editing
+C:\Users\rmathew>api-designer
+API designer running on port 3000...
+
+
+
+
+
+
+
+
+
+
+

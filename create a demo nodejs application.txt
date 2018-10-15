@@ -1,0 +1,374 @@
+
+C:\development>mkdir demo && cd demo
+
+C:\development\demo>echo.>server.js
+
+C:\development\demo>mkdir app && cd app
+
+C:\development\demo\app>echo.>index.html
+
+C:\development\demo\app>echo.>app.js
+
+C:\development\demo\app>echo.>app.css
+
+C:\development\demo\app>
+
+
+C:\development\demo>npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg> --save` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+name: (demo)
+version: (1.0.0)
+description: Basic demo application
+entry point: (server.js)
+test command:
+git repository:
+keywords:
+author: Roy Mathew
+license: (ISC)
+About to write to C:\development\demo\package.json:
+
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "Basic demo application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Roy Mathew",
+  "license": "ISC"
+}
+
+
+
+npm install express body-parser morgan path --save
+
+
+C:\development\demo>nodemon server.js
+'nodemon' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\development\demo>npm install -g nodemon
+npm WARN optional dep failed, continuing fsevents@1.0.14
+C:\Users\rmathew\AppData\Roaming\npm\nodemon -> C:\Users\rmathew\AppData\Roaming\npm\node_modules\nodemon\bin\nodemon.js
+nodemon@1.11.0 C:\Users\rmathew\AppData\Roaming\npm\node_modules\nodemon
++-- ignore-by-default@1.0.1
++-- undefsafe@0.0.3
++-- es6-promise@3.3.1
++-- debug@2.2.0 (ms@0.7.1)
++-- touch@1.0.0 (nopt@1.0.10)
++-- minimatch@3.0.3 (brace-expansion@1.1.6)
++-- ps-tree@1.1.0 (event-stream@3.3.4)
++-- lodash.defaults@3.1.2 (lodash.restparam@3.6.1, lodash.assign@3.2.0)
++-- chokidar@1.6.1 (path-is-absolute@1.0.1, inherits@2.0.3, async-each@1.0.1, glob-parent@2.0.0, is-glob@2.0.1, is-binary-path@1.0.1, readdirp@2.1.0, anymatch@1.3.0)
++-- update-notifier@0.5.0 (is-npm@1.0.0, semver-diff@2.1.0, chalk@1.1.3, string-length@1.0.1, repeating@1.1.3, configstore@1.4.0, latest-version@1.0.1)
+
+
+
+
+C:\development\demo>nodemon server.js
+[nodemon] 1.11.0
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+demo is running on 8080
+GET / 200 11.186 ms - 1063
+GET /app.js 200 2.519 ms - 181
+GET /app.css 200 5.725 ms - 2
+
+C:\development\demo>npm install karma karma-jasmine jasmine-core karma-chrome-launcher --save-dev
+npm WARN package.json demo@1.0.0 No repository field.
+npm WARN package.json demo@1.0.0 No README data
+npm WARN optional dep failed, continuing fsevents@1.0.14
+karma-jasmine@1.0.2 node_modules\karma-jasmine
+
+jasmine-core@2.5.2 node_modules\jasmine-core
+
+karma-chrome-launcher@2.0.0 node_modules\karma-chrome-launcher
++-- fs-access@1.0.1 (null-check@1.0.0)
++-- which@1.2.11 (isexe@1.1.2)
+
+karma@1.3.0 node_modules\karma
++-- range-parser@1.2.0
++-- isbinaryfile@3.0.1
++-- graceful-fs@4.1.9
++-- di@0.0.1
++-- rimraf@2.5.4
++-- mime@1.3.4
++-- qjobs@1.1.5
++-- colors@1.1.2
++-- source-map@0.5.6
++-- http-proxy@1.15.2 (eventemitter3@1.2.0, requires-port@1.0.0)
++-- minimatch@3.0.3 (brace-expansion@1.1.6)
++-- dom-serialize@2.2.1 (extend@3.0.0, void-elements@2.0.1, custom-event@1.0.1, ent@2.2.0)
++-- tmp@0.0.28 (os-tmpdir@1.0.2)
++-- useragent@2.1.9 (lru-cache@2.2.4)
++-- glob@7.1.1 (path-is-absolute@1.0.1, inherits@2.0.3, fs.realpath@1.0.0, once@1.4.0, inflight@1.0.6)
++-- bluebird@3.4.6
++-- optimist@0.6.1 (wordwrap@0.0.3, minimist@0.0.10)
++-- connect@3.5.0 (parseurl@1.3.1, utils-merge@1.0.0, debug@2.2.0, finalhandler@0.5.0)
++-- expand-braces@0.1.2 (array-unique@0.2.1, array-slice@0.2.3, braces@0.1.5)
++-- chokidar@1.6.1 (path-is-absolute@1.0.1, inherits@2.0.3, async-each@1.0.1, glob-parent@2.0.0, is-binary-path@1.0.1, is-glob@2.0.1, readdirp@2.1.0, anymatch@1.3.0)
++-- log4js@0.6.38 (semver@4.3.6, readable-stream@1.0.34)
++-- socket.io@1.4.7 (debug@2.2.0, has-binary@0.1.7, socket.io-parser@2.2.6, socket.io-adapter@0.4.0, engine.io@1.6.10, socket.io-client@1.4.6)
++-- lodash@3.10.1
++-- combine-lists@1.0.1 (lodash@4.16.4)
+
+
+C:\development\demo>npm install -g karma-cli
+C:\Users\rmathew\AppData\Roaming\npm\karma -> C:\Users\rmathew\AppData\Roaming\npm\node_modules\karma-cli\bin\karma
+karma-cli@1.0.1 C:\Users\rmathew\AppData\Roaming\npm\node_modules\karma-cli
++-- resolve@1.1.7
+
+
+
+C:\development\demo>npm install angular angular-ui-router angular-mocks --save-dev
+npm WARN package.json demo@1.0.0 No repository field.
+npm WARN package.json demo@1.0.0 No README data
+angular-mocks@1.5.8 node_modules\angular-mocks
+
+angular-ui-router@0.3.1 node_modules\angular-ui-router
+
+angular@1.5.8 node_modules\angular
+
+
+
+C:\development\demo>karma init
+
+Which testing framework do you want to use ?
+Press tab to list possible options. Enter to move to the next question.
+> jasmine
+
+Do you want to use Require.js ?
+This will add Require.js plugin.
+Press tab to list possible options. Enter to move to the next question.
+> no
+
+Do you want to capture any browsers automatically ?
+Press tab to list possible options. Enter empty string to move to the next question.
+> Chrome
+>
+
+What is the location of your source and test files ?
+You can use glob patterns, eg. "js/*.js" or "test/**/*Spec.js".
+Enter empty string to move to the next question.
+>
+
+Should any of the files included by the previous patterns be excluded ?
+You can use glob patterns, eg. "**/*.swp".
+Enter empty string to move to the next question.
+>
+
+Do you want Karma to watch all the files and run the tests on change ?
+Press tab to list possible options.
+> yes
+
+
+Config file generated at "C:\development\demo\karma.conf.js".
+
+
+
+C:\development\demo>cd app
+
+C:\development\demo\app>mkdir services && cd services
+
+C:\development\demo\app\services>mkdir borrowers && cd borrowers
+
+C:\development\demo\app\services\borrowers>echo.>users.js
+
+
+
+
+C:\development\demo\app\services\borrowers>karma start
+26 10 2016 10:57:15.361:WARN [karma]: No captured browser, open http://localhost:9876/
+26 10 2016 10:57:15.370:INFO [karma]: Karma v1.3.0 server started at http://localhost:9876/
+Terminate batch job (Y/N)? y
+
+C:\development\demo\app\services\borrowers>cd\development\demo
+
+C:\development\demo>karma start
+26 10 2016 10:58:46.689:WARN [karma]: No captured browser, open http://localhost:9876/
+26 10 2016 10:58:46.706:INFO [karma]: Karma v1.3.0 server started at http://localhost:9876/
+26 10 2016 10:58:46.712:INFO [launcher]: Launching browser Chrome with unlimited concurrency
+26 10 2016 10:58:46.728:INFO [launcher]: Starting browser Chrome
+26 10 2016 10:58:50.201:INFO [Chrome 53.0.2785 (Windows 7 0.0.0)]: Connected on socket /#kYW9ijWmPhmxbUWDAAAA with id 18865383
+Chrome 53.0.2785 (Windows 7 0.0.0) Borrowers factory has a dummy spec to test 2 + 2 FAILED
+        Expected undefined to equal 4.
+            at Object.<anonymous> (app/services/borrowers/borrowers.spec.js:4:14)
+Chrome 53.0.2785 (Windows 7 0.0.0): Executed 1 of 1 (1 FAILED) ERROR (0.033 secs / 0.011 secs)
+
+
+
+
+Extra to see clean karma output
+
+C:\development\demo>npm install karma-spec-reporter --save-dev
+npm WARN package.json demo@1.0.0 No repository field.
+npm WARN package.json demo@1.0.0 No README data
+karma-spec-reporter@0.0.26 node_modules\karma-spec-reporter
++-- colors@0.6.2
+
+
+mongodb installation and other stuff
+====================================
+msiexec.exe /q /i mongodb-win32-x86_64-2008plus-ssl-3.2.10-signed.msi INSTALLLOCATION="C:\development\MongoDB\Server\3.0.4\" ADDLOCAL="all"
+
+run mongodb
+===========
+C:\development\MongoDB\Server\3.0.4\bin>mongod --dbpath C:\development\data\db
+
+mongod --dbpath C:\development\data\db
+
+connect to mongodb
+==================
+
+C:\development\MongoDB\Server\3.0.4\bin>mongo
+
+
+> db.loanseq.insert({"loanNumber":"600000001"})
+WriteResult({ "nInserted" : 1 })
+> db.borrowerseq.insert({"borrowerKey":"1000"})
+WriteResult({ "nInserted" : 1 })
+> db.loanseq.find()
+{ "_id" : ObjectId("5817a854940e89e630ef02a0"), "loanNumber" : "600000001" }
+> db.borrowerseq.find()
+{ "_id" : ObjectId("5817a89d940e89e630ef02a1"), "borrowerKey" : "1000" }
+>
+
+importing a CSV file with header that denotes attribute names
+mongoimport --db test --collection voereport --type csv --headerline --file c:/development/mongoimport.csv
+from shared drive
+mongoimport --db test --collection voeReport --type csv --headerline --file Q:/mongoimport.csv
+importing a json file
+mongoimport --db users --collection contacts --file contacts.json
+
+
+text search
+db.voereport.createIndex( { lenderName: "text"} ) --worked
+db.voereport.createIndex( { loanOfficer: "text"} ) -- did not work since one index is already created
+db.voereport.find( { $text: { $search: "Aaron" } } ) -- did not work
+db.voereport.find( { $text: { $search: "SARASOTA" } } ) -- did not work
+db.voereport.find( { $text: { $search: "FLAGSTAR" } } )
+db.voereport.find( { lenderName: "SARASOTA" } )
+db.voereport.find( { lenderName: /^SARASOTA/ } )
+db.voereport.find( { $text: { $search: "TROY" } } )
+db.voereport.find( { lenderName: /^F/ } )
+
+db.voereport.aggregate([{$match:{worknumberDate:"NA"}}])
+db.voereport.aggregate([{$match:{worknumberDate:"NA"}},{$group:{_id:{worknumberDate:"$worknumberDate",loanOfficer:"$loanOfficer"},count:{$sum:1}}}])
+db.voereport.aggregate([{$match:{worknumberDate:"NA"}},{$group:{_id:{worknumberDate:"$worknumberDate",loanOfficer:"$loanOfficer"},count:{$sum:1}}},{ $sort : { loanOfficer : -1 } }])
+
+db.voereport.aggregate([{$match:{worknumberDate:"NA"}},
+{$group:{_id:{worknumberDate:"$worknumberDate",loanOfficer:"$loanOfficer"},count:{$sum:1}}},
+{ $sort : { loanOfficer : -1 } },
+{ $limit : 5 }])
+
+other examples
+db.BusinessProcess.aggregate( {"$group" :  {_id : {status:"$status", type: "$type"}, count : { $sum : 1} } } )
+db.events.aggregate({$group: {_id : "$date", number:  { $sum : 1} }} )
+
+db.voereport.aggregate([{"$group" : {_id:"$loanOfficer", count:{$sum:1}}}])
+
+
+
+================================================================================
+																			   =
+C:\development\node\wapp1>                                                     =
+C:\development\demo>karma start                                                =
+                                                                               =
+																			   =
+================================================================================
+
+microservices build and run
+===========================
+gradle build && java -jar build/libs/gs-spring-boot-0.1.0.jar
+
+for analysis
+==============
+gradle sonarqube
+
+
+
+==========================================
+
+secure fees application with angular and node
+
+C:\Users\rmathew\neonspace>ng new --skip-git SecureFees
+ng serve
+
+npm install angular2-jwt --save>npm install angular2-jwt --save	
+
+
+C:\Users\rmathew\neonspace\SecureFees>npm install angular2-jwt --save
+secure-fees@0.0.0 C:\Users\rmathew\neonspace\SecureFees
+`-- angular2-jwt@0.2.2
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules\chokidar\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.1: wanted {"os":"darwin","arch":"any"}	
+
+
+
+          <li>
+            <a *ngIf="!authService.loggedIn()" href="https://{YOUR-AUTH0-DOMAIN}.auth0.com/authorize?scope={SCOPES}&audience={YOUR-AUTH0-API-IDENTIFIER}&response_type=id_token%20token&client_id={YOUR-AUTH0-CLIENT-ID}&redirect_uri={YOUR-AUTH0-REDIRECT-URI}&nonce={{nonce}}">Log In</a>
+          </li>
+
+
+http://www.svlada.com/jwt-token-authentication-with-spring-boot/
+
+
+
+
+{
+  "client_id": "qd3JFiNZOC3WNsnreO4pi65LKefIhuTq",
+  "email" :  "roy.mathew@flagstar.com",
+  "password" : "roymk0014poc",
+  "connection": "Username-Password-Authentication"
+
+}
+
+
+Developing a basic angular2 app
+===============================
+C:\development>ng new --skip-git --directory ui basicng2
+
+
+ng2boot app
+
+C:\development\ng2boot\backend>
+
+http://mongoosejs.com/docs/promises.html
+
+
+{
+name: "Nick Cerminara Mathew",
+password: "password"
+}																	   
+
+
+starting mongo
+
+C:\development\MongoDB\Server\3.0.4\bin>
+
+Angular app for secure fees
+C:\Users\rmathew\neonspace\SecureFees>
+
+node oauth server
+C:\development\oAuthServerApp>
+
+
+
+
+
+
+
+
